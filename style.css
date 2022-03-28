@@ -1,0 +1,916 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+.bar-image {
+    width: 25px;
+    display: none;
+}
+.nav-list {
+    display: flex;
+    margin-left: 300px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: -0.500211px;
+    color: #19191B;
+}
+
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.active {
+    color: #5454D4;
+}
+
+.active:hover .play-icon {
+    transform: rotate(90deg);
+}
+
+
+.play-icon {
+    width: 10px;
+    transition: transform 0.5s;
+}
+
+.nav-get-link {
+    margin-left: auto;
+    padding: 13px 20px;
+    background: #F0544C;
+    border: 1px solid #C31A12;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.500211px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+.nav-get-link:hover {
+    text-decoration: underline;
+}
+
+
+.header-info-box {
+    display: flex;
+    padding: 80px 0px 60px 50px;
+    
+
+
+}
+
+
+.header-img {
+    width: 40%;
+    margin-left: 60px;
+}
+
+.header-info {
+    width: 45%;
+    margin-left: 80px;
+}
+
+.header-info-title {
+    padding-top: 70px;
+    font-size: 54px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+}
+
+.header-info-text {
+    font-size: 19px;
+    line-height: 39px;
+    letter-spacing: -0.656526px;
+    margin: 30px 0px;
+    color: #19191B;
+
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.header-form {
+    margin-top: 70px;
+    display: flex;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    
+}
+
+.email {
+    margin-right: 20px;
+}
+
+.input-email {
+    width: 50%;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.email-text {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.562737px;
+    color: #696871;
+
+}
+
+
+.header-btn {
+    margin-left: auto;
+    margin-right: 10px;
+    padding: 15px 40px;
+    background: #F04037;
+    border: 1px solid #C31A12;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.656526px;
+    color: #FFFFFF;
+
+}
+
+.review-section {
+    background-color: #5454D4;
+
+}
+
+.review-section .container {
+    padding: 100px;
+    display: flex;
+    padding-bottom: 60px;
+
+}
+
+.review-text {
+    font-size: 19px;
+    line-height: 39px;
+    font-style: italic;
+    letter-spacing: -0.656526px;
+    margin: 25px 0px;
+    color: #FFFFFF;
+
+}
+
+.review-owner {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.500211px;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.review1 {
+    margin-left: 20px;
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px;
+    
+
+}
+
+.travel-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.travel-infos {
+    width: 55%;
+}
+
+
+.travel-img {
+    margin-left: 80px;
+}
+
+.travel-box-title {
+    font-size: 54px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+
+}
+
+.travel-box-text {
+    font-size: 21px;
+    line-height: 39px;
+    letter-spacing: -0.656526px;
+    margin: 25px 0px;
+    color: #696871;
+
+}
+
+.t-title {
+    display: flex;
+}
+
+.number {
+    margin-right: 20px;
+    width: 49px;
+    height: 49px;
+    background-color: #5454D4;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.750316px;
+    padding-top: 10px;
+    color: #FFFFFF;
+
+}
+
+.travel-plan-title {
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: -0.656526px;
+    color: #19191B;
+
+}
+
+.travel-plan-text {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.500211px;
+    color: #696871;
+    margin: 0px 0px 15px 60px;
+
+}
+
+.world-box {
+    display: flex;
+    padding: 70px 0px 40px 60px;
+
+}
+
+.world-images {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-box {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+}
+
+.second-box {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.world-info {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 200px;
+
+}
+
+
+.first-image {
+    border-radius: 5px;
+    margin: 5px;
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.second-image {
+    border-radius: 5px;
+    margin: 5px;
+    width: 200px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.third-image {
+    border-radius: 5px;
+    margin: 5px;
+    width: 200px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.forth-image {
+    border-radius: 5px;
+    margin: 5px;
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.world-box-title {
+    font-size: 54px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+
+}
+
+.world-box-text {
+    font-size: 19px;
+    line-height: 39px;
+    letter-spacing: -0.656526px;
+    margin: 25px 0px;
+    color: #696871;
+}
+
+.travel-experience {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.experience-info {
+    width: 55%;
+    margin: 160px 80px 50px 0px;
+}
+
+
+.experince-title {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+
+}
+
+.experience-text {
+    font-size: 21px;
+    line-height: 39px;
+    letter-spacing: -0.656526px;
+    margin: 25px 0px;
+    color: #696871;
+
+}
+
+.experience-get-link {
+    display: inline-block;
+    padding: 15px 40px;
+    color: white;
+    text-decoration: none;
+    background: #F04037;
+    border: 1px solid #C31A12;
+    border-radius: 5px;
+}
+
+
+.experience-get-link:hover {
+    text-decoration: underline;
+}
+
+.video-section {
+    position: relative;
+    height: 700px;
+    background-image: url(./img/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+    background-position-x: center;
+}
+
+
+
+
+.play {
+    width: 100px;
+    position: absolute;
+    bottom: 50%;
+    right: 49%;
+    transform: translate(50%, 50%);
+
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-first-info {
+    width: 35%;
+}
+
+.footer-first-name {
+    font-size: 54px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: -1.87579px;
+    color: #19191B;
+
+}
+
+.footer-info {
+    font-size: 21px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: -0.656526px;
+    margin: 25px 0px;
+    color: #696871;
+}
+
+
+.app {
+    margin-right: 10px;
+    width: 170px;
+}
+
+.play-store {
+    width: 170px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 80px 0px 30px 0px;
+}
+
+.footer-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.footer-item {
+    margin: 0px 10px;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.500211px;
+    color: #19191B;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-name {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.750316px;
+    color: #19191B;
+
+}
+
+.footer-text {
+    margin-left: 70px;
+    font-size: 16px;
+    line-height: 38px;
+    text-align: right;
+    letter-spacing: -0.500211px;
+    color: #19191B;
+}
+
+
+@media (max-width:1160px) {
+    .container {
+        width: 1000px;
+
+    }
+
+    .header-info-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header-img {
+        width: 45%;
+        margin: 0px;
+    }
+
+    .header-info {
+        width: 50%;
+        margin: 0px;
+    }
+
+    .travel-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .travel-infos {
+        width: 55%;
+    }
+
+    .travel-box-photo {
+        width: 40%;
+    }
+
+    .header-info-title, .travel-box-title, .experince-title, .footer-first-name, .world-box-title {
+        font-size: 46px;
+    }
+
+    .header-info-text, .travel-box-text, .world-box-text, .experience-text, .footer-info {
+        font-size: 19px;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-images {
+        margin-left: 0px;
+    }
+
+
+    .video-section {
+        background-position-x: center;
+    }
+}
+
+
+@media (max-width:1020px) {
+    .container {
+        width: 900px;
+
+    }
+
+}
+
+
+@media (max-width:920px) {
+    .container {
+        width: 800px;
+
+    }
+
+    main .container {
+        padding: 100px 0px;
+    }
+
+
+    .travel-infos {
+        width: 45%;
+    }
+
+    .travel-box-photo {
+        width: 45%;
+    }
+
+    .travel-img {
+        margin-left: 0px;
+    }
+
+    .review-section .container {
+        padding: 100px 0px  ;
+    }
+
+    .header-info-box {
+        padding-left: 10px;
+    }
+
+    .header-img {
+        width: 35%;
+    }
+
+    .header-info {
+        width: 55%;
+    }
+
+    .world-box {
+        padding-left: 0px;
+    }
+}
+
+
+@media (max-width:820px) {
+    .container {
+        width: 700px;
+
+    }
+
+    .nav-list {
+        margin-left: auto;
+    }
+
+    .header-info-title, .travel-box-title, .experince-title, .footer-first-name, .world-box-title {
+        font-size: 38px;
+        line-height: normal;
+    }
+
+    .header-info-text, .travel-box-text, .world-box-text, .experience-text, .footer-info {
+        font-size: 18px;
+    }
+
+    .header-btn {
+        margin-left: auto;
+        padding: 10px 20px;
+    }
+
+    .footer-text {
+        margin-left: 20px;
+    }
+
+    .review1 {
+        margin-left: 0px;
+    }
+}
+
+
+@media (max-width:720px) {
+    .container {
+        width: 600px;
+
+    }
+
+    .header-info-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-info {
+        width: 90%;
+        text-align: center;
+    }
+
+    .header-form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-btn {
+        margin-left: 0px;
+    }
+
+    .review-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review1 {
+        width: 80%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    main .container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .travel-box {
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .travel-plan-text {
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .travel-box-photo {
+        display: none;
+    }
+
+    .travel-infos {
+        width: 90%;
+        text-align: center;
+    }
+
+    .travel-plans-item {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .world-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .world-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        text-align: center;
+        margin-right: 170px;
+    }
+
+    .world-info {
+        width: 80%;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .travel-experience {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+    }
+
+    .experience-img {
+        width: 50%;
+        
+    }
+
+    .experience-info {
+        width: 80%;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .footer-first-info {
+        width: 80%;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-text {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:620px) {
+    .container {
+        width: 500px;
+
+    }
+
+
+    .travel-plan-text {
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:520px) {
+    .container {
+        width: 90%;
+
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .app {
+        margin-right: 0px;
+    }
+
+    .nav-get-link {
+        display: none;
+    }
+
+    .bar-image {
+        display: block;
+        margin-left: auto;
+    }
+
+    .header-form {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-btn {
+        width: 60%;
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    label {
+       width: 200px;
+       margin-left: 50px;
+       font-size: 14px;
+       
+    }
+
+    .travel-plan-text {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .footer-images {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .email {
+        margin-right: 5px;
+    }
+
+    .input-email {
+        width: 50%;
+    }
+
+    .footer-list {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+}
